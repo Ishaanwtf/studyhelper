@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes - StudyHelper</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            position: relative;
+        }
+
+        .back-btn {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background: rgba(102, 126, 234, 0.9);
+            border: none;
+            color: white;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            font-size: 1.5em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            font-weight: bold;
+            z-index: 100;
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        .back-btn:hover {
+            background: #667eea;
+            transform: scale(1.1);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: white;
+            text-align: center;
+            margin-bottom: 60px;
+            font-weight: 800;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+            letter-spacing: 1px;
+        }
+
+        .subjects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .subject-card {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 35px 25px;
+            border-radius: 18px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            border: 3px solid transparent;
+            text-decoration: none;
+        }
+
+        .subject-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 45px rgba(0, 0, 0, 0.25);
+            border-color: #667eea;
+        }
+
+        .subject-card:active {
+            transform: translateY(-4px);
+        }
+
+        .subject-emoji {
+            font-size: 3em;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .subject-name {
+            font-size: 1.4em;
+            font-weight: 700;
+            color: #333;
+            letter-spacing: 0.5px;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2em;
+                margin-bottom: 40px;
+            }
+
+            .subjects-grid {
+                grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+                gap: 15px;
+            }
+
+            .subject-card {
+                padding: 25px 18px;
+            }
+
+            .subject-emoji {
+                font-size: 2.5em;
+            }
+
+            .subject-name {
+                font-size: 1.1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="class10.html" class="back-btn">←</a>
+
+    <div class="container">
+        <h1>📚 Choose Subject</h1>
+
+        <div class="subjects-grid">
+            <a href="notes/maths.html" class="subject-card">
+                <span class="subject-emoji">🔢</span>
+                <div class="subject-name">Maths</div>
+            </a>
+
+            <a href="notes/hindi.html" class="subject-card">
+                <span class="subject-emoji">📖</span>
+                <div class="subject-name">Hindi</div>
+            </a>
+
+            <a href="notes/english.html" class="subject-card">
+                <span class="subject-emoji">✏️</span>
+                <div class="subject-name">English</div>
+            </a>
+
+            <a href="notes/history-civics.html" class="subject-card">
+                <span class="subject-emoji">🏛️</span>
+                <div class="subject-name">History & Civics</div>
+            </a>
+
+            <a href="notes/geography.html" class="subject-card">
+                <span class="subject-emoji">🌍</span>
+                <div class="subject-name">Geography</div>
+            </a>
+
+            <a href="notes/physics.html" class="subject-card">
+                <span class="subject-emoji">⚛️</span>
+                <div class="subject-name">Physics</div>
+            </a>
+
+            <a href="notes/biology.html" class="subject-card">
+                <span class="subject-emoji">🧬</span>
+                <div class="subject-name">Biology</div>
+            </a>
+
+            <a href="notes/chemistry.html" class="subject-card">
+                <span class="subject-emoji">🧪</span>
+                <div class="subject-name">Chemistry</div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
